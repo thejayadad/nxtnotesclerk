@@ -2,6 +2,7 @@ import React from 'react'
 import { auth } from "@clerk/nextjs/server";
 import { Button } from '@nextui-org/react';
 import Link from 'next/link';
+import { redirect } from 'next/navigation';
 
 
 const HomePage = async () => {
