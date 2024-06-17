@@ -16,7 +16,6 @@ const DeleteNote = ({note}) => {
           await deleteNote({ id: note.id }); // Call the deletePlayer action
           // You can handle any additional logic after successful deletion here
           router.push('/dashboard');
-          window.location.reload();
         } catch (error) {
           console.error('Error deleting player:', error);
         } finally {
