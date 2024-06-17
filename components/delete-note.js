@@ -15,9 +15,8 @@ const DeleteNote = ({note}) => {
           setDeleting(true); // Set deleting status to true when deletion is in progress
           await deleteNote({ id: note.id }); // Call the deletePlayer action
           // You can handle any additional logic after successful deletion here
-          window.location.reload();
           router.push('/dashboard');
-            
+          window.location.reload();
         } catch (error) {
           console.error('Error deleting player:', error);
         } finally {
